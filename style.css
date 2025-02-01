@@ -14,6 +14,7 @@ h1{
 }
 .container{
     display: grid;
+    grid-template-columns: 1fr;
     justify-content: center;
     align-items: start;
     position: relative;
@@ -24,11 +25,12 @@ h1{
     display: none;
 }
 .btn-disabled{
-    background-color: rgb(183, 182, 182);
+    background-color: rgb(85, 210, 100);
     border-radius: 8px;
     box-shadow: none;
-    cursor: no-drop;
+    cursor: not-allowed;
     height: 40px;
+    opacity: 0.6;
     width: 120px;
     font-weight: 600;
     color: rgb(242, 255, 255);
@@ -45,7 +47,10 @@ h1{
     font-style:italic ;
     opacity: 80%;
     text-align: left;
-    margin-left: 50px;
+    margin: 5px 50px;
+    min-width: 100px;
+    white-space: nowrap;
+
 }
 .txtarea{
     width: 400px;

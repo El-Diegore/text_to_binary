@@ -3,16 +3,24 @@ function toggleButton(){
     const textarea = document.getElementById('text_id');
     const button = document.getElementById('send_button');
     const label_msg = document.getElementById('label_id');
-
-    button.disabled = textarea.value.trim() === '';
+    
+    if(textarea.value.trim() === ''|| textarea.value.length > maxChar){ 
+        button.disabled = true;
+        button.classList.add('btn-disabled'); 
+        button.classList.remove('btn');
+    }
+    else {
+        button.disabled = false;
+        button.classList.remove('btn-disabled'); 
+        button.classList.add('btn');
+    }
+    
     if(textarea.value.length > maxChar){
         label_msg.classList.remove('none');
-        button.classList.remove('btn')
-        button.classList.add('btn-disabled')
+        
     }else{
         label_msg.classList.add('none');
-        button.classList.add('btn')
-        button.classList.remove('btn-disabled')
+
     }
 }
 function textToBinary(){
