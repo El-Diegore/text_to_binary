@@ -1,6 +1,78 @@
+html{
+    margin: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    height: 100vh;
+}
+h1{
+    font-weight:  900;
+    text-align: center;
+    margin: 40px 0;
+}
+.container{
+    display: grid;
+    justify-content: center;
+    align-items: start;
+    position: relative;
+    width: 90vw;
+    max-width: 500px;
+}
 .none{
     display: none;
 }
+.btn-disabled{
+    background-color: rgb(183, 182, 182);
+    border-radius: 8px;
+    box-shadow: none;
+    cursor: no-drop;
+    height: 40px;
+    width: 120px;
+    font-weight: 600;
+    color: rgb(242, 255, 255);
+    margin: 0 auto;
+}
 .label-msg{
     color: red;
+    margin: 1rem 0;
+    position: absolute;
+    top: 80px;
+    left: 50px;
 }
+.lbl-max{
+    font-style:italic ;
+    opacity: 80%;
+    text-align: left;
+    margin-left: 50px;
+}
+.txtarea{
+    width: 400px;
+    resize: none;
+    border-radius: 5px;
+    box-shadow: none;
+    margin-bottom: 1.5em;
+    font-size: larger;
+    margin: 5px auto;
+}.btn{
+    border-radius: 8px;
+    box-shadow: none;
+    cursor: pointer;
+    height: 40px;
+    width: 120px;
+    font-weight: 600;
+    color: rgb(242, 255, 255);
+    background-color: rgb(85, 210, 100);
+    margin: 0 auto;
+
+}
+.result{
+    font-size: large;
+    text-align: center;
+}&
+p span{
+    font-weight: 700;
+}
+
+

@@ -4,16 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Convertidor de texto</title>
+    <title>Convertidor de Texto a Binario</title>
 </head>
 <body>
     <div class="container">
-        <h1>Convertidor de Texto</h1>
+        <h1>Convertidor de Texto a Binario</h1>
         <label class="label-msg none" id="label_id" for="">has superado el máximo de caracteres</label>
-        <label for="text_id">max. 100 caracteres</label>
-        <textarea name="text" oninput="toggleButton()" id="text_id" rows="5" placeholder="Escribe algún texto"></textarea>
-        <button id="send_button" disabled onclick="textToBinary()">Convertir</button>
-        <p>Resultado: <span id="result_id"></span></p>
+        <textarea class="txtarea" name="text" oninput="toggleButton()" id="text_id" rows="5" placeholder="Escribe algún texto"></textarea>
+        <label class="lbl-max" for="text_id">max. 100 caracteres</label>
+        <button class="btn btn-disabled" id="send_button" disabled onclick="textToBinary()">Convertir</button>
+        <div class="result">
+            <p>Resultado: <span id="result_id"></span></p>
+        </div>
     </div>
     <script src="index.js"></script>
 

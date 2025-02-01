@@ -1,15 +1,18 @@
 function toggleButton(){
-    const maxChar = 10;
+    const maxChar = 100;
     const textarea = document.getElementById('text_id');
     const button = document.getElementById('send_button');
     const label_msg = document.getElementById('label_id');
 
-    button.disabled = textarea.value.trim() === '' | textarea.value.length > maxChar;
+    button.disabled = textarea.value.trim() === '';
     if(textarea.value.length > maxChar){
         label_msg.classList.remove('none');
-        console.log("aqio")
+        button.classList.remove('btn')
+        button.classList.add('btn-disabled')
     }else{
         label_msg.classList.add('none');
+        button.classList.add('btn')
+        button.classList.remove('btn-disabled')
     }
 }
 function textToBinary(){
