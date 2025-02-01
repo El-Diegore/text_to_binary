@@ -3,13 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Convertidor de texto</title>
 </head>
 <body>
-    <h1>Convertidor de Texto</h1>
-    <textarea name="" id="text_id"></textarea>
-    <button onclick="textToBinary()">Convertir</button>
-    <p>Resultado: <span id="result_id"></span></p>
+    <div class="container">
+        <h1>Convertidor de Texto</h1>
+        <label class="label-msg none" id="label_id" for="">has superado el máximo de caracteres</label>
+        <label for="text_id">max. 100 caracteres</label>
+        <textarea name="text" oninput="toggleButton()" id="text_id" rows="5" placeholder="Escribe algún texto"></textarea>
+        <button id="send_button" disabled onclick="textToBinary()">Convertir</button>
+        <p>Resultado: <span id="result_id"></span></p>
+    </div>
     <script src="index.js"></script>
+
 </body>
 </html>

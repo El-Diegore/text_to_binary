@@ -1,3 +1,17 @@
+function toggleButton(){
+    const maxChar = 10;
+    const textarea = document.getElementById('text_id');
+    const button = document.getElementById('send_button');
+    const label_msg = document.getElementById('label_id');
+
+    button.disabled = textarea.value.trim() === '' | textarea.value.length > maxChar;
+    if(textarea.value.length > maxChar){
+        label_msg.classList.remove('none');
+        console.log("aqio")
+    }else{
+        label_msg.classList.add('none');
+    }
+}
 function textToBinary(){
     const text = document.getElementById('text_id').value
     const result = document.getElementById('result_id')
